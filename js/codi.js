@@ -14,3 +14,10 @@ $('#slogan').typeIt({
 .tiPause(1000)
 .tiDelete(11)
 .tiType('nteractions')
+
+$("#getting-started")
+  .countdown("2019/01/01", function(event) {
+    $('#getting-started').typeIt(
+      event.strftime('%D days %H:%M:%S')
+    );
+  });
