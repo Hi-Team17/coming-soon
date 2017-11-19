@@ -1,13 +1,15 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #344250;
-    background: linear-gradient(to right, #11998e, #5B86E5); 
+    background-color: #363636;
+    background-image: linear-gradient(#394e4f, #494949);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: white;
 }
 
 .inici {
@@ -21,17 +23,17 @@ body {
 h1 {
     color: white;
 }
+
 #icon {
     width: 10em;
-    
 }
 
 #team {
     width: 100px;
 }
+
 #contact {
     width: 100px;
-<<<<<<< HEAD
 }
 
 .change-my-color path {
@@ -46,21 +48,19 @@ h1 {
     position: fixed;
     bottom: 0;
 }
+
 #contact {
     margin-right: 8px;
     right: 0;
     width: 15vw;
     max-width: 4em;
 }
-#team{
+
+#team {
     left: 0;
     margin-left: 8px;
     width: 15vw;
     max-width: 4.3em;
 }
 
-.icon_action {
-    
-=======
->>>>>>> 8d473cb85bc651f285fa03afc58d1c44b6263023
-}
+.icon_action {}
