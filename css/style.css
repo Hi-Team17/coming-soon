@@ -8,7 +8,6 @@ body {
     background: linear-gradient(to right, #11998e, #5B86E5); 
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: white;
 }
 
 .inici {
@@ -32,6 +31,7 @@ h1 {
 }
 #contact {
     width: 100px;
+<<<<<<< HEAD
 }
 
 .change-my-color path {
@@ -61,4 +61,6 @@ h1 {
 
 .icon_action {
     
+=======
+>>>>>>> 8d473cb85bc651f285fa03afc58d1c44b6263023
 }
