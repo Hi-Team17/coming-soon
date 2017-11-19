@@ -5,8 +5,8 @@ body {
 }
 
 body {
-    background-color: #344250;
-    background: linear-gradient(to right, #11998e, #5B86E5);
+    background-color: #363636;
+    background-image: linear-gradient(#394e4f, #494949);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
