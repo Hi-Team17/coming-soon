@@ -5,6 +5,7 @@ html, body {
 
 body {
     background-color: #344250;
+    background: linear-gradient(to right, #11998e, #5B86E5); 
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
@@ -21,6 +22,10 @@ body {
 h1 {
     color: white;
 }
+#icon {
+    width: 10em;
+    
+}
 
 #team {
     width: 100px;
@@ -35,4 +40,25 @@ h1 {
 
 #slogan {
     font-size: 2em;
+}
+
+.bottom_ico {
+    position: fixed;
+    bottom: 0;
+}
+#contact {
+    margin-right: 8px;
+    right: 0;
+    width: 15vw;
+    max-width: 4em;
+}
+#team{
+    left: 0;
+    margin-left: 8px;
+    width: 15vw;
+    max-width: 4.3em;
+}
+
+.icon_action {
+    
 }
