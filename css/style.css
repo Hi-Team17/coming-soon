@@ -6,7 +6,7 @@ body {
 
 body {
     background-color: #363636;
-    background-image: linear-gradient(#394e4f, #494949);
+    background: linear-gradient(#394e4f, #494949);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
@@ -20,47 +20,39 @@ body {
     justify-content: center;
 }
 
-h1 {
-    color: white;
-}
-
 #icon {
-    width: 10em;
+    width: 12em;
 }
 
-#team {
-    width: 100px;
-}
 
-#contact {
-    width: 100px;
-}
-
-.change-my-color path {
-    fill: green;
-}
-
-#slogan {
+.slogan {
     font-size: 2em;
 }
 
 .bottom_ico {
     position: fixed;
     bottom: 0;
-}
-
-#contact {
-    margin-right: 8px;
-    right: 0;
-    width: 15vw;
-    max-width: 4em;
+    margin-bottom: 0.3em;
 }
 
 #team {
     left: 0;
-    margin-left: 8px;
-    width: 15vw;
-    max-width: 4.3em;
+    margin-left: 0.5em;
+}
+#contact {
+    right: 0;
+    margin-right: 0.5em;
+}
+#team>img, #contact>img {
+    max-width: 3.3em;
 }
 
-.icon_action {}
+#clock {
+    font-size: 1.2em;
+    margin-top: 3em;
+}
+
+.inline>p{
+    display: inline;
+    clear: both;
+}
