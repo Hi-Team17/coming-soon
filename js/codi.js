@@ -1,24 +1,16 @@
-document.getElementById("buto").onclick = function() {apretar()};
-
-function apretar() {
-    alert("Hola Santi fem tecno? :D");
-}
 
 $('#slogan').typeIt({
-     speed: 50,
-     autoStart: false
+     speed: 140,
+     autoStart: false,
+     loop: true
 })
-.tiType('Wll')
-.tiPause(500)
-.tiDelete(2)
-.tiType('ell, ')
+.tiType('<strong>H</strong>uman ')
+.tiPause(100)
+.tiType('<strong>I</strong>nterfaces')
 .tiPause(1000)
-.tiType('I guess I\'m typing..')
-.tiBreak() .tiPause(750)
-.tiType(' but I don\'t really know what to say')
-.tiSettings({speed: 700})
-.tiType('...')
-.tiPause(750)
-.tiSettings({speed: 50})
-.tiDelete()
-.tiType('IS THAT SO <strong>WRONG??</strong>');
+.tiDelete(9)
+.tiPause(100)
+.tiType('ntelligence')
+.tiPause(1000)
+.tiDelete(11)
+.tiType('nteractions')
