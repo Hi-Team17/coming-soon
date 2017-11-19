@@ -1,4 +1,4 @@
-
+//LLETRES MOVIMENT
 $('#slogan').typeIt({
      speed: 140,
      autoStart: false,
@@ -15,9 +15,8 @@ $('#slogan').typeIt({
 .tiDelete(11)
 .tiType('nteractions')
 
-$("#getting-started")
-  .countdown("2019/01/01", function(event) {
-    $('#getting-started').typeIt(
-      event.strftime('%D days %H:%M:%S')
-    );
-  });
+//RELLOTGE COMPTE ENRRERA 
+
+$('#clock').countdown('2020/10/10', function(event) {
+  $(this).html(event.strftime('%D days %H:%M:%S'));
+});

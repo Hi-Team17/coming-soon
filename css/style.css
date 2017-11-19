@@ -7,7 +7,6 @@ body {
     background-color: #344250;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: white;
 }
 
 .inici {
@@ -27,12 +26,4 @@ h1 {
 }
 #contact {
     width: 100px;
-}
-
-.change-my-color path {
-    fill: green;
-}
-
-#slogan {
-    font-size: 2em;
 }
