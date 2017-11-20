@@ -21,7 +21,8 @@ $('#clock').countdown('2017/11/22', function (event) {
 });
 
 //ICONES TEAM APAREIXEN
-$(".team_fabs").hide()
 $( "#main_team" ).click(function() {
+    
     $(".team_fabs").fadeToggle("250ms");
+    $(".team_fabs").css('display', 'flex');
   });

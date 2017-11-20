@@ -39,15 +39,15 @@ body {
     font-size: 2em;
 }
 
+.team_fabs {
+    margin-bottom: 65px;
+    display: none;
+}
+
 .bottom_ico, .team_fabs {
-    display: flex;
     flex-direction: column-reverse;
     position: fixed;
     bottom: 0;
-}
-
-.team_fabs {
-    margin-bottom: 65px;
 }
 
 .icon_action {
