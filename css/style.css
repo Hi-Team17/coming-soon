@@ -32,15 +32,25 @@ body {
 }
 
 .bottom_ico {
+    display: flex;
+    flex-direction: column-reverse;
     position: fixed;
     bottom: 0;
-    margin-bottom: 0.3em;
+}
+
+.icon_action {
+    margin-bottom: 0.4em;
 }
 
 #team {
     left: 0;
     margin-left: 0.5em;
 }
+
+.team_image {
+    filter: drop-shadow(2.5px 2.5px 5px rgba(22, 22, 22, 0.425));
+}
+
 #contact {
     right: 0;
     margin-right: 0.5em;
