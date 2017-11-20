@@ -82,6 +82,16 @@ body {
     max-width: 3.3em;
 }
 
+.social_icons>img {
+    max-width: 2em;
+    margin: 2px;
+}
+.social_icons {
+    margin-top: 5px;
+    position: fixed;
+    right: 5px;
+}
+
 #clock {
     font-size: 1.3em;
     margin-top: 2em;
