@@ -4,7 +4,7 @@
         autoStart: false,
         loop: true
     })
-    .tiPause(1300)
+    .tiPause(1200)
     .tiType('<strong>I</strong>nterfaces')
     .tiPause(1000)
     .tiDelete(9)

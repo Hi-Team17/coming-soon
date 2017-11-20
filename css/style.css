@@ -51,10 +51,25 @@ body {
 
 #clock {
     font-size: 1.2em;
-    padding-top: 2em;
+    margin-top: 2em;
 }
 
 .inline>p{
     display: inline;
     clear: both;
+}
+
+.cta {
+    margin-top: 1em;
+    width: 13em;
+    height: 3.2em;
+    background-color: white;
+    border-radius: 2em;
+}
+
+.cta>p {
+    margin: 0.65em;
+    color: #494949;
+    font-size: 1.2em;
+    
 }
