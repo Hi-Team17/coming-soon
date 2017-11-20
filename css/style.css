@@ -39,11 +39,15 @@ body {
     font-size: 2em;
 }
 
-.bottom_ico {
+.bottom_ico, .team_fabs {
     display: flex;
     flex-direction: column-reverse;
     position: fixed;
     bottom: 0;
+}
+
+.team_fabs {
+    margin-bottom: 65px;
 }
 
 .icon_action {
@@ -59,11 +63,15 @@ body {
     filter: drop-shadow(2.5px 2.5px 5px rgba(22, 22, 22, 0.425));
 }
 
+.shadow {
+    filter: drop-shadow(2.5px 2.5px 5px rgba(22, 22, 22, 0.274));
+}
+
 #contact {
     right: 0;
     margin-right: 0.5em;
 }
-#team>img, #contact>img {
+#team>img, .team_fabs>img, #contact>img {
     max-width: 3.3em;
 }
 
