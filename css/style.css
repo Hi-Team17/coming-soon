@@ -22,7 +22,7 @@ body {
     justify-content: center;
 }
 .button {
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
     filter: brightness(0.95);
 }
 .button:hover {
@@ -70,11 +70,11 @@ body {
 #clock {
     font-size: 1.3em;
     margin-top: 2em;
-        transition: all .2s ease-in-out;
+        transition: all .4s ease-in-out;
 }
 
 #clock:hover {
-    transform: rotate(4deg);
+    transform: rotate(2deg);
 }
 
 .inline>p{
