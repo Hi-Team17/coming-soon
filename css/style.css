@@ -68,6 +68,11 @@ body {
 #clock {
     font-size: 1.3em;
     margin-top: 2em;
+        transition: all .2s ease-in-out;
+}
+
+#clock:hover {
+    transform: rotate(4deg);
 }
 
 .inline>p{
