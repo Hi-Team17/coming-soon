@@ -2,8 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 100%;
+    overflow: auto;
 }
 
 body {
@@ -17,10 +17,17 @@ body {
 .inici {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 89vh;
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 426px) {
+    .inici {
+        height: 100vh;
+    }
+}
+
 .button {
     transition: all .3s ease-in-out;
     filter: brightness(0.95);
