@@ -28,6 +28,7 @@ $("#main_team").click(function () {
 
 // CTA Notify me
 $(".cta").click(function () {
+    $(".cta:not(.sent)").removeClass("button");
     $(".cta:not(.sent)").addClass("active");
     $("input").focus();
 });
