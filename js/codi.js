@@ -28,6 +28,7 @@ $("#main_team").click(function () {
 
 // CTA Notify me
 $(".cta").click(function () {
+    console.log("Click a notificar");
     $(".cta:not(.sent)").removeClass("button");
     $(".cta:not(.sent)").addClass("active");
     $("input").focus();
@@ -38,8 +39,10 @@ var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[
 $("input").on('input', function () {
     if (regex.test($(this).val())) {
         $("button").removeAttr("disabled");
+        console.log("Email correcte ;)");
     } else {
         $("button").attr("disabled", "disabled");
+        console.log("Comprova el mail...");
     }
 });
 
