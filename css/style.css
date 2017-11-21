@@ -31,16 +31,17 @@ body {
 .button {
     transition: all .3s ease-in-out;
     filter: brightness(0.95);
+    cursor: pointer;
 }
+
 .button:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     filter: brightness(1.1);
 }
 
 #icon {
     width: 12em;
 }
-
 
 .slogan {
     font-size: 2em;
@@ -51,7 +52,8 @@ body {
     display: none;
 }
 
-.bottom_ico, .team_fabs {
+.bottom_ico,
+.team_fabs {
     flex-direction: column-reverse;
     position: fixed;
     bottom: 0;
@@ -78,7 +80,10 @@ body {
     right: 0;
     margin-right: 0.5em;
 }
-#team>img, .team_fabs>img, #contact>img {
+
+#team>img,
+.team_fabs>img,
+#contact>img {
     max-width: 3.3em;
 }
 
@@ -86,6 +91,7 @@ body {
     max-width: 2em;
     margin: 2px;
 }
+
 .social_icons {
     margin-top: 5px;
     position: fixed;
@@ -95,29 +101,140 @@ body {
 #clock {
     font-size: 1.3em;
     margin-top: 2em;
-        transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 #clock:hover {
     transform: rotate(2deg);
 }
 
-.inline>p{
+.inline>p {
     display: inline;
     clear: both;
 }
 
-.cta {
-    margin-top: 1em;
-    width: 13em;
-    height: 3.2em;
-    background-color: white;
-    border-radius: 2em;
-}
 
-.cta>p {
+/* Call to action */
+
+.cta {
     margin: 0.75em;
-    color: #494949;
+    margin-top: 1em;
     font-size: 1.1em;
     
+    background: #fff;
+    border-radius: 2em;
+    width: 13em;
+    height: 3.2em;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    color: #494949;
+    transition: width .2s ease-in-out;
+    cursor: pointer;
+}
+
+.cta .hide {
+    display: none;
+}
+
+.cta form {
+    display: flex;
+}
+
+.cta span {
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn .3s ease-in-out;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+.cta .input {
+    display: none;
+    opacity: 0;
+    flex: 3;
+    text-align: left;
+}
+
+.cta .input input {
+    font-size: 0.8em;
+    border: 0;
+    width: 180px;
+    height: 45px;
+    margin: 0 0 0 25px;
+    outline: none;
+    color: #464646;
+}
+
+.cta .button {
+    display: none;
+    opacity: 0;
+    flex: 1;
+}
+
+.cta .button button {
+    font-size: 0.85em;
+    outline: none;
+    float: right;
+    padding: 0 15px;
+    height: 40px;
+    background: #A0D9DC;
+    border-radius: 2em;
+    color: #fff;
+    border: 0;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.cta .button button:disabled {
+    color: #494949;
+    opacity: .2;
+}
+
+.cta.sent {
+    cursor: default;
+}
+
+.cta.active {
+    width: 290px;
+    text-align: left;
+    transition: width .2s ease-in-out;
+    cursor: default;
+}
+
+.cta.active span {
+    display: none;
+}
+
+.cta.active .input,
+.cta.active .button {
+    display: block;
+    animation: fadeIn .3s ease-in-out;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

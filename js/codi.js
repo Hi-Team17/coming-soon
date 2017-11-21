@@ -1,5 +1,5 @@
 //LLETRES MOVIMENT
-    $('#slogan_int').typeIt({
+$('#slogan_int').typeIt({
         speed: 140,
         autoStart: false,
         loop: true
@@ -21,8 +21,31 @@ $('#clock').countdown('2017/11/22', function (event) {
 });
 
 //ICONES TEAM APAREIXEN
-$( "#main_team" ).click(function() {
-    
+$("#main_team").click(function () {
     $(".team_fabs").fadeToggle("250ms");
     $(".team_fabs").css('display', 'flex');
-  });
+});
+
+// CTA Notify me
+$(".cta").click(function () {
+    $(".cta:not(.sent)").addClass("active");
+    $("input").focus();
+});
+
+var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+$("input").on('input', function () {
+    if (regex.test($(this).val())) {
+        $("button").removeAttr("disabled");
+    } else {
+        $("button").attr("disabled", "disabled");
+    }
+});
+
+$("form").submit(function (x) {
+    x.preventDefault();
+    if (regex.test($("input").val())) {
+        $(".cta span").text("Thank you!");
+        $(".cta").removeClass("active").addClass("sent");
+    }
+});
