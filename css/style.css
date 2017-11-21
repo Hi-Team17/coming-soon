@@ -139,6 +139,7 @@ body {
     color: #494949;
     transition: width .2s ease-in-out;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .cta .hide {
