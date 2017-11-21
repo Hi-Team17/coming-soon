@@ -16,7 +16,7 @@ $('#slogan_int').typeIt({
 
 //RELLOTGE COMPTE ENRRERA 
 
-$('#clock').countdown('2017/11/22', function (event) {
+$('#clock').countdown('2017/11/29', function (event) {
     $(this).html(event.strftime('%D d %H h %M m %S s'));
 });
 
