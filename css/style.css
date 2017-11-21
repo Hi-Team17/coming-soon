@@ -12,6 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* Per amagar el requadre blau quan es cliquen elements a dispositius mòbils */
 }
 
 .inici {
