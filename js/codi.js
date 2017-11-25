@@ -1,3 +1,9 @@
+//RELLOTGE COMPTE ENRRERA 
+
+$('#clock').countdown('2017/11/29', function (event) {
+    $(this).html(event.strftime('%D d %H h %M m %S s'));
+});
+
 //LLETRES MOVIMENT
 $('#slogan_int').typeIt({
         speed: 140,
@@ -13,12 +19,6 @@ $('#slogan_int').typeIt({
     .tiPause(1000)
     .tiDelete(11)
     .tiType('nteractions')
-
-//RELLOTGE COMPTE ENRRERA 
-
-$('#clock').countdown('2017/11/29', function (event) {
-    $(this).html(event.strftime('%D d %H h %M m %S s'));
-});
 
 //ICONES TEAM APAREIXEN
 $("#main_team").click(function () {
