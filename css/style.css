@@ -56,18 +56,21 @@ body {
 
 .bottom_ico,
 .team_fabs {
-    flex-direction: column-reverse;
+    flex-direction: row;
     position: fixed;
     bottom: 0;
 }
+.team_fabs {
+    margin-left: -3.6em;
+}
 
 .icon_action {
+    margin: 0.2em;
     margin-bottom: 0.4em;
 }
 
 #team {
-    left: 0;
-    margin-left: 0.5em;
+
 }
 
 .team_image {
