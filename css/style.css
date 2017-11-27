@@ -8,7 +8,7 @@ body {
 
 body {
     background-color: #363636;
-    background: linear-gradient(#394e4f, #494949);
+    background: hsl(198, 25%, 20%);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
@@ -32,7 +32,7 @@ body {
 
 .button {
     transition: all .3s ease-in-out;
-    filter: brightness(0.95);
+    filter: brightness(0.98);
     cursor: pointer;
 }
 
@@ -42,7 +42,8 @@ body {
 }
 
 #icon {
-    width: 12em;
+    height: 8.5em;
+    margin-bottom: 0.6em;
 }
 
 .slogan {
@@ -69,16 +70,13 @@ body {
     margin-bottom: 0.4em;
 }
 
-#team {
-
-}
-
 .team_image {
-    filter: drop-shadow(2.5px 2.5px 5px rgba(22, 22, 22, 0.425));
+    filter: drop-shadow(2.5px 3px 9px hsla(198, 25%, 12%, 0.80));
 }
 
 .shadow {
-    filter: drop-shadow(2.5px 2.5px 5px rgba(22, 22, 22, 0.274));
+    filter: drop-shadow(2.5px 15px 25px hsla(198, 25%, 12%, 0.65));
+    
 }
 
 #contact {  
@@ -139,7 +137,7 @@ body {
     height: 50px;
     width: 200px;
     text-align: center;
-    color: #494949;
+    color: hsl(198, 25%, 20%);;
     transition: width .2s ease-in-out;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -191,7 +189,7 @@ body {
     float: right;
     padding: 0 15px;
     height: 40px;
-    background: #A0D9DC;
+    background: #33FFCC;
     border-radius: 2em;
     color: #fff;
     border: 0;
