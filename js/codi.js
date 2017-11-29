@@ -1,6 +1,6 @@
 //RELLOTGE COMPTE ENRRERA 
 
-$('#clock').countdown('2017/11/29', function (event) {
+$('#clock').countdown('2017/12/13', function (event) {
     $(this).html(event.strftime('%D d %H h %M m %S s'));
 });
 
